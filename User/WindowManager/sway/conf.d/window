@@ -10,8 +10,6 @@ gaps outer 4
 default_border pixel 1
 default_floating_border pixel 1
 
-for_window [app_id=".*"] split toggle
-
 # class                 border  backgr. text    indicator child_border
 client.focused          $focsed $focsed $text   $focsed   $focsed
 client.focused_inactive $unfocd $unfocd $text   $unfocd   $unfocd   
