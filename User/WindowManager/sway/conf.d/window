@@ -1,0 +1,21 @@
+# vi: ft=swayconfig
+
+set $urgent #e06c75
+set $focsed #303742
+set $unfocd #1f1f25
+set $text   #e0def4
+gaps inner 3
+gaps outer 4
+
+default_border pixel 1
+default_floating_border pixel 1
+
+for_window [app_id=".*"] split toggle
+
+# class                 border  backgr. text    indicator child_border
+client.focused          $focsed $focsed $text   $focsed   $focsed
+client.focused_inactive $unfocd $unfocd $text   $unfocd   $unfocd   
+client.unfocused        $unfocd $unfocd $text   $unfocd   $unfocd
+client.urgent           $urgent $urgent $text   $urgent   $urgent
+client.placeholder      $unfocd $unfocd $text   $unfocd   $unfocd
+

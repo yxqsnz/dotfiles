@@ -37,9 +37,9 @@ local dots = {
     },
 
     {
-      name = "An H Named Window manager",
-      path = "WindowManager/herbstluftwm",
-      target = "~/.config/herbstluftwm"
+      name = "Sway",
+      path = "WindowManager/sway",
+      target = "~/.config/sway"
     },
 
     {
@@ -55,17 +55,23 @@ local dots = {
     },
 
     {
-	    name = "Rofi",
-	    path = "WindowManager/rofi",
-	    target = "~/.config/rofi"
+	    name = "Waybar",
+	    path = "WindowManager/waybar",
+	    target = "~/.config/waybar"
     },
+
+    {
+	    name = "Mako",
+	    path = "WindowManager/mako",
+	    target = "~/.config/mako"
+    },
+
 
     {
 	    name = "Rofi (Resources)",
 	    path = "WindowManager/rofi-local",
 	    target = "~/.local/share/rofi"
-    }
-
+    },
 }
 
 print ':: Installing'
