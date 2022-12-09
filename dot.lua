@@ -29,7 +29,43 @@ local dots = {
         name = "Git",
         path = "Dev/Git",
         target = "~/.config/git"
+    },
+    {
+        name = "(Xorg) XinitRC",
+	path = "AutoStart/xorg-xinitrc",
+	target = "~/.xinitrc"
+    },
+
+    {
+      name = "An H Named Window manager",
+      path = "WindowManager/herbstluftwm",
+      target = "~/.config/herbstluftwm"
+    },
+
+    {
+     name = "Fish",
+     path = "Shell/Fish",
+     target = "~/.config/fish"
+    },
+
+    {
+	    name = "Alacritty",
+	    path = "Terminal/Alacritty",
+	    target = "~/.config/alacritty"
+    },
+
+    {
+	    name = "Rofi",
+	    path = "WindowManager/rofi",
+	    target = "~/.config/rofi"
+    },
+
+    {
+	    name = "Rofi (Resources)",
+	    path = "WindowManager/rofi-local",
+	    target = "~/.local/share/rofi"
     }
+
 }
 
 print ':: Installing'

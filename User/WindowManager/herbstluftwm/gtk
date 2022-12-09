@@ -1,0 +1,7 @@
+#!/bin/sh
+apply() {
+	gsettings set org.gnome.desktop.interface "$@"
+}
+
+apply gtk-theme "rose-pine-gtk"
+apply font-name "IBM Plex Sans"

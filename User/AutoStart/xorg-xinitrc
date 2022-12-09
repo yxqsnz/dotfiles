@@ -1,0 +1,10 @@
+systemctl --user import-environment DISPLAY XAUTHORITY
+
+if command -v dbus-update-activation-environment >/dev/null 2>&1; then
+        dbus-update-activation-environment DISPLAY XAUTHORITY
+fi
+
+xset r rate 300 50
+_JAVA_AWT_WM_NONREPARENTING=1
+/usr/libexec/gsd-xsettings &
+exec herbstluftwm --locked
