@@ -10,81 +10,78 @@ function os.capture(cmd, raw)
 end
 
 local function mklink(source, target)
-    return os.execute(string.format('ln -s %s %s', source, target))
+  return os.execute(string.format('ln -s %s %s', source, target))
 end
 
 local function exists(name)
-    return os.execute(string.format('[[ -f %s ]] || [[ -d %s ]] || readlink "%s" >/dev/null', name, name, name))
+  return os.execute(string.format('[[ -f %s ]] || [[ -d %s ]] || readlink "%s" >/dev/null', name, name, name))
 end
-
-
 
 local function realpath(path)
-    return os.capture('realpath ' .. path, false)
+  return os.capture('realpath ' .. path, false)
 end
 
-
 local dots = {
-    {
-        name = "Git",
-        path = "Dev/Git",
-        target = "~/.config/git"
-    },
-    {
-        name = "(Xorg) XinitRC",
-	path = "AutoStart/xorg-xinitrc",
-	target = "~/.xinitrc"
-    },
+  {
+    name = "Git",
+    path = "Dev/Git",
+    target = "~/.config/git"
+  },
 
-    {
-      name = "Sway",
-      path = "WindowManager/sway",
-      target = "~/.config/sway"
-    },
+  {
+    name = "Cargo",
+    path = "BuildTools/Cargo.toml",
+    target = "~/.cargo/config.toml"
+  },
 
-    {
-     name = "Fish",
-     path = "Shell/Fish",
-     target = "~/.config/fish"
-    },
+  {
+    name = "Sway",
+    path = "WindowManager/sway",
+    target = "~/.config/sway"
+  },
 
-    {
-	    name = "Alacritty",
-	    path = "Terminal/Alacritty",
-	    target = "~/.config/alacritty"
-    },
+  {
+    name = "Fish",
+    path = "Shell/Fish",
+    target = "~/.config/fish"
+  },
 
-    {
-	    name = "Waybar",
-	    path = "WindowManager/waybar",
-	    target = "~/.config/waybar"
-    },
+  {
+    name = "Alacritty",
+    path = "Terminal/Alacritty",
+    target = "~/.config/alacritty"
+  },
 
-    {
-	    name = "Mako",
-	    path = "WindowManager/mako",
-	    target = "~/.config/mako"
-    },
+  {
+    name = "Waybar",
+    path = "WindowManager/waybar",
+    target = "~/.config/waybar"
+  },
 
+  {
+    name = "Mako",
+    path = "WindowManager/mako",
+    target = "~/.config/mako"
+  },
 
-    {
-	    name = "Rofi (Resources)",
-	    path = "WindowManager/rofi-local",
-	    target = "~/.local/share/rofi"
-    },
+  {
+    name = "WezTerm",
+    path = "Terminal/WezTerm",
+    target = "~/.config/wezterm"
+  }
 }
 
 print ':: Installing'
 
 for i, item in pairs(dots) do
-    io.write(string.format("  : linking %s\r", item.name))
-    local path = 'User/' .. item.path
+  io.write(string.format("  : linking %s\r", item.name))
+  local path = 'User/' .. item.path
 
-    if not exists(item.target) then
-        print(' S\r')
+  if not exists(item.target) then
+    print(' S\r')
 
-        mklink(realpath(path), item.target)
-    else
-        print(' I\r')
-    end
+    mklink(realpath(path), item.target)
+  else
+    print(' I\r')
+  end
 end

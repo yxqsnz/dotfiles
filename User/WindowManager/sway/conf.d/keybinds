@@ -6,14 +6,14 @@ set $down j
 set $up k
 set $right l
 
-set $term alacritty 
-# set $menu wofi --show drun --prompt "" --allow-images | xargs swaymsg exec --
-set $menu rofi -show drun 
+set $term wezterm 
+set $menu wofi --show drun --prompt "" --allow-images | xargs swaymsg exec --
+#set $menu rofi -show drun 
 ## Custom keybinds
 
 # Print
-  bindsym print exec flameshot full -c
-  bindsym Shift+print exec flameshot gui
+  bindsym print exec grimshot --notify copy screen
+  bindsym Shift+print exec grimshot --notify copy area
   bindsym Ctrl+Shift+print exec grimshot --notify copy window
 
 
