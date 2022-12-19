@@ -4,7 +4,7 @@
 # You can read `man 5 sway-input` for more information about this section.
 input * {
   xkb_layout br
-  repeat_rate 50
+  repeat_rate 40
   repeat_delay 300
 }
 
@@ -15,7 +15,7 @@ input type:pointer {
 
 # output
 output * {
-  bg ~/.config/sway/Pink-rose-close-up-petals-water-droplets-black-background_3840x2160.jpg fill
+  bg ~/.config/sway/pexels-balamurugan-anbazhagan-763098.jpg fill
 #  max_render_time 14
 }
 

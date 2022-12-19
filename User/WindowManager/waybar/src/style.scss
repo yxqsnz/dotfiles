@@ -1,4 +1,4 @@
-@import "themes/rose-pine.scss";
+@import "themes/carbonfox.scss";
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
@@ -27,7 +27,7 @@ label:focus {
 }
 
 #keyboard-state {
-    background: #97e1ad;
+    background: $background;
     color: #000000;
     padding: 0 0px;
     margin: 0 5px;

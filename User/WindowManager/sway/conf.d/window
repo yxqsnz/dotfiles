@@ -1,8 +1,8 @@
 # vi: ft=swayconfig
 
 set $urgent #e06c75
-set $focsed #303742
-set $unfocd #1f1f25
+set $focsed #2a2a2a
+set $unfocd #202020
 set $text   #e0def4
 gaps inner 3
 gaps outer 4

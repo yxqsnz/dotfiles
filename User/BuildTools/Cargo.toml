@@ -5,5 +5,9 @@ rustflags = ["-C", "link-arg=-fuse-ld=mold"]
 [profile.dev]
 debug = false
 
+[profile.releaes]
+lto = "thin"
+
 [build]
 target-dir = "/home/yxqsnz/.cargo/target"
+rustc-wrapper = "sccache"
