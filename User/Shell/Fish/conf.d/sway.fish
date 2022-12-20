@@ -7,6 +7,11 @@ if [ (tty) = "/dev/tty1" ]
         export MAN_DISABLE_SECCOMP=1
         export MOZ_ENABLE_WAYLAND=1
         export MOZ_DBUS_REMOTE=1
+	export GTK_IM_MODULE=fcitx
+	export QT_IM_MODULE=fcitx
+	export XMODIFIERS=@im=fcitx
+	export GLFW_IM_MODULE=ibus
+	export SDL_IM_MODULE=fcitx
 
         exec sway
   end

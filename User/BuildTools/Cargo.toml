@@ -5,7 +5,7 @@ rustflags = ["-C", "link-arg=-fuse-ld=mold"]
 [profile.dev]
 debug = false
 
-[profile.releaes]
+[profile.release]
 lto = "thin"
 
 [build]

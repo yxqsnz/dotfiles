@@ -1,5 +1,6 @@
 # vi: ft=i3config
 
-exec flameshot
+exec --no-startup-id sleep 5 && flameshot
+exec --no-startup-id fcitx5 -d
 
 
