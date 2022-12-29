@@ -8,6 +8,8 @@ debug = false
 [profile.release]
 lto = "thin"
 
+[alias]
+in = "binstall"
+
 [build]
-target-dir = "/home/yxqsnz/.cargo/target"
-rustc-wrapper = "sccache"
+rustc-wrapper = "cachepot"

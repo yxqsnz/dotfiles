@@ -73,9 +73,9 @@ local dots = {
 	},
 
 	{
-		name = "Astro Neovim",
-		path = "Editor/AstroNvim",
-		target = "~/.config/nvim/lua/user",
+		name = "Neovim",
+		path = "Editor/Neovim",
+		target = "~/.config/nvim",
 	},
 }
 

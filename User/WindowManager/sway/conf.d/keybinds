@@ -7,8 +7,8 @@ set $up k
 set $right l
 
 set $term wezterm 
-set $menu wofi --show drun --prompt "" --allow-images | xargs swaymsg exec --
-#set $menu rofi -show drun 
+#set $menu wofi --show drun --prompt "" --allow-images | xargs swaymsg exec --
+set $menu rofi -show drun 
 ## Custom keybinds
 
 # Print

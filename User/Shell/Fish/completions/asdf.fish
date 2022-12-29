@@ -1,1 +1,1 @@
-/home/yxqsnz/.asdf/completions/asdf.fish
+/home/yx/.asdf/completions/asdf.fish
