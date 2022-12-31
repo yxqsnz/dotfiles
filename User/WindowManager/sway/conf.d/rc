@@ -1,7 +1,6 @@
 # vi: ft=i3config
 
-exec --no-startup-id sleep 5 && flameshot
 exec --no-startup-id fcitx5 -d
-exec --no-startup-id wezterm
-
-
+exec --no-startup-id kitty 
+exec --no-startup-id firefox
+exec --no-startup-id Discord

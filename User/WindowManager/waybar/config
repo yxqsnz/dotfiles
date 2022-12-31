@@ -1,10 +1,10 @@
 // vi: ft=json5
 {
-   "layer": "top", // Waybar at top layer
+   "layer": "bottom", // Waybar at top layer
    "position": "top", // Waybar position (top|bottom|left|right)
    "margin-bottom": 0,
-   "margin-left": 8,
-   "margin-right": 7,
+   "margin-left": 5.,
+   "margin-right": 5,
 
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -85,7 +85,7 @@
         "format": "{icon} {capacity}%",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
-        "format-alt": "{icon} {capacity} {time}",
+        "format-alt": "{power}K",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]

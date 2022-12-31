@@ -1,8 +1,15 @@
 # Read `man 5 sway` for a complete reference.
 
-include conf.d/*
 include /etc/sway/config.d/*
 
+include /home/yx/.config/sway/conf.d/opts
+include /home/yx/.config/sway/conf.d/gtk
+include /home/yx/.config/sway/conf.d/bar
+include /home/yx/.config/sway/conf.d/keybinds
+include /home/yx/.config/sway/conf.d/media-keys
+include /home/yx/.config/sway/conf.d/window
+include /home/yx/.config/sway/conf.d/rules
+include /home/yx/.config/sway/conf.d/rc
 
 exec swayidle -w \
   timeout 300 'swaylock -f -c 000000' \

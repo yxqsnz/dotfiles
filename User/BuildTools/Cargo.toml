@@ -4,9 +4,14 @@ rustflags = ["-C", "link-arg=-fuse-ld=mold"]
 
 [profile.dev]
 debug = false
+opt-level = 0
 
 [profile.release]
 lto = "thin"
+opt-level = "s"
+strip = true
+panic = "abort"
+codegen-units = 1
 
 [alias]
 in = "binstall"

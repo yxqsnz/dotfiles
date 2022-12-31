@@ -5,6 +5,7 @@
 input type:keyboard {
   xkb_layout us
   xkb_variant intl
+  xkb_options  compose:rwin
   repeat_rate 40
   repeat_delay 400
 }
@@ -16,7 +17,7 @@ input type:pointer {
 
 # output
 output * {
-  bg ~/.config/sway/LinuxMontains.png fill
+  bg ~/.config/sway/kurumi_tokisaki__date_a_live__by_greenmapple17_d80nivv.png fill
 #  max_render_time 14
 }
 
