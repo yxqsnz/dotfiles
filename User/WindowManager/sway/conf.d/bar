@@ -1,5 +1,22 @@
 # vi: ft=i3config
+set $bg        #161616
+set $text      #f2f4f8
+set $accent    #ebbcba
+set $accentalt #2a2a2a
 
 bar {
-    swaybar_command waybar
+    font pango:FiraCode Nerd Font, FontAwesome 10
+    position bottom
+    status_command i3status-rs ~/.config/sway/i3status.toml
+    colors {
+        separator  $accentalt
+        background $bg
+        statusline $accent
+        #                 border  foreground text
+        focused_workspace  $bg     $bg        $accent
+        active_workspace   $bg     $bg        $accentalt 
+        inactive_workspace $bg     $bg        $text
+        urgent_workspace   $accent $accent    $bg
+    }
 }
+

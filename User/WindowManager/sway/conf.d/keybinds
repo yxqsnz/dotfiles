@@ -5,17 +5,19 @@ set $left h
 set $down j
 set $up k
 set $right l
+set $term alacritty
+set $grimshot /usr/share/sway/scripts/grimshot
 
-set $term kitty -1 
 #set $menu wofi --show drun --prompt "" --allow-images | xargs swaymsg exec --
 #set $menu rofi -show drun 
 set $menu bemenu-run -c --fn "IBM Plex Sans 18" --scrollbar autohide -p "Run: " -l 10 -B 2 -M 60 -H 4 -i -w
 ## Custom keybinds
 
 # Print
-  bindsym print exec grimshot --notify copy screen
-  bindsym Shift+print exec grimshot --notify copy area
-  bindsym Ctrl+Shift+print exec grimshot --notify copy window
+  bindsym print exec $grimshot --notify copy screen
+  bindsym Shift+print exec $grimshot --notify copy area
+  bindsym Ctrl+Shift+print exec $grimshot --notify copy window
+  bindsym $mod+Shift+s exec flameshot gui -r | wl-copy --type image/png
 
 
 # {{ Default Key bindings

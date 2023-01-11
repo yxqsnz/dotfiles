@@ -4,8 +4,8 @@ set $urgent #e06c75
 set $focsed #2d2d2d
 set $unfocd #202020
 set $text   #e0def4
-gaps inner 3
-gaps outer 1
+gaps inner 0
+gaps outer 0
 
 default_border pixel 1
 default_floating_border pixel 1

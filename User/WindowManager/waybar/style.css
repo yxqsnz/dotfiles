@@ -6,7 +6,7 @@
   border-radius: 0px; }
 
 window#waybar {
-  background: transparent;
+  background-color: #161616;
   color: #f2f4f8;
   transition-property: background-color;
   transition-duration: .5s; }

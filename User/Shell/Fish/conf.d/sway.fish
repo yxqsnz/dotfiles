@@ -12,9 +12,8 @@ if [ (tty) = "/dev/tty1" ]
      	  export XMODIFIERS=@im=fcitx
 	      export GLFW_IM_MODULE=ibus
       	export SDL_IM_MODULE=fcitx
-
-        /usr/bin/cat /usr/bin/waybar >/dev/null	
-      	# https://raw.githubusercontent.com/geezee/pacman-terminal/master/pacman.c
+  	
+	# https://raw.githubusercontent.com/geezee/pacman-terminal/master/pacman.c
         pacman-ghosts
 
         exec sway

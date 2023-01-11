@@ -51,3 +51,4 @@
 
 
 (package! wakatime-mode)
+(package! elcord)

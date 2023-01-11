@@ -31,3 +31,5 @@
 [pull]
   ff = true
 
+[safe]
+	directory = /usr/lib/vlang/thirdparty/tcc

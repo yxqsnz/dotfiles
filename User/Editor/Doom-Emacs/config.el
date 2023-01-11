@@ -21,7 +21,7 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "IBM Plex Mono" :size 12 :weight 'semi-light)
+(setq doom-font (font-spec :family "IBM Plex Mono" :size 14 :weight 'semi-light)
      doom-variable-pitch-font (font-spec :family "IBM Plex Sans" :size 13))
 
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -82,7 +82,6 @@
 (setq lsp-enable-symbol-highlighting t)
 (setq lsp-lens-enable t)
 (setq lsp-eldoc-enable-hover t)
-
 (defun my-weebery-is-always-greater ()
   (let* ((banner '("⠤⠤⠤⠤⠤⠤⢤⣄⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠤⠤⠶⠶⠶⠦⠤⠤⠤⠤⠤⢤⣤⣀⣀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀"
@@ -109,3 +108,9 @@
      'face 'doom-dashboard-banner)))
 
 (setq +doom-dashboard-ascii-banner-fn #'my-weebery-is-always-greater)
+(require 'elcord)
+
+(setq elcord-client-id '"1058057754125795509")
+(setq elcord-quiet  t)
+
+(elcord-mode)
