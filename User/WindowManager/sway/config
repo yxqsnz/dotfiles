@@ -13,11 +13,12 @@ include /home/yx/.config/sway/conf.d/rules
 include /home/yx/.config/sway/conf.d/rc
 
 include /etc/sway/config.d/10-systemd-cgroups.conf
+set $lock swaylock --screenshots --clock --indicator --effect-blur 7x5 --fade-in 0.2 --ring-color "#ebbcba" --key-hl-color "#f2f4f8" --text-color "#f2f4f8"
 
 exec swayidle -w \
-  timeout 300 'swaylock -f -c 000000' \
+  timeout 300 $lock \
   timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-  before-sleep 'swaylock -f -c 000000'
+  before-sleep $lock
 
 
 ## Status Bar:

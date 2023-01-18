@@ -17,7 +17,7 @@ input type:pointer {
 
 # output
 output * {
-  bg ~/.config/sway/kurumi_tokisaki__date_a_live__by_greenmapple17_d80nivv.png fill
+  bg ~/.config/sway/1.1.4_1.1.4.jpg fill
 #  max_render_time 14
 }
 
