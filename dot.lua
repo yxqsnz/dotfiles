@@ -16,7 +16,7 @@ local function mklink(source, target)
 end
 
 local function exists(name)
-  return os.execute(string.format('[[ -f %s ]] || [[ -d %s ]] || readlink "%s" >/dev/null', name, name, name))
+  return os.execute(string.format('test -f %s  || test -d %s  || readlink "%s" >/dev/null', name, name, name))
 end
 
 local function realpath(path)

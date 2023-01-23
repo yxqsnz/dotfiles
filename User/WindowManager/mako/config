@@ -10,9 +10,9 @@ icons=1
 max-icon-size=64
 default-timeout=5000
 ignore-timeout=1
-font=Agave 10
-anchor=bottom-right
-margin=10,5,5
+font=Fira Code 10
+anchor=top-right
+margin=10
 
 [urgency=low]
 border-color=#2a2a2a

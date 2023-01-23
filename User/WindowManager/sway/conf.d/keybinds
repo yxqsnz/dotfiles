@@ -6,7 +6,7 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
-set $grimshot /usr/share/sway/scripts/grimshot
+set $grimshot grimshot
 
 #set $menu wofi --show drun --prompt "" --allow-images | xargs swaymsg exec --
 #set $menu rofi -show drun 

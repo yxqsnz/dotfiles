@@ -6,7 +6,7 @@
   border-radius: 0px; }
 
 window#waybar {
-  background-color: #161616;
+  background: none;
   color: #f2f4f8;
   transition-property: background-color;
   transition-duration: .5s; }
@@ -34,7 +34,7 @@ window#waybar.hidden {
   padding: 2px;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: #161616;
+  background: none;
   border: 1px solid #2a2a2a; }
 
 #clock {
@@ -44,7 +44,7 @@ window#waybar.hidden {
   padding: 2px;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: #161616;
+  background: none;
   border: 1px solid #2a2a2a; }
 
 #workspaces button {

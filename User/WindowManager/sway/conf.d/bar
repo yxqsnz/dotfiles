@@ -5,18 +5,6 @@ set $accent    #ebbcba
 set $accentalt #2a2a2a
 
 bar {
-    font pango:FiraCode Nerd Font, FontAwesome 10
-    position bottom
-    status_command i3status-rs ~/.config/sway/i3status.toml
-    colors {
-        separator  $accentalt
-        background $bg
-        statusline $accent
-        #                 border  foreground text
-        focused_workspace  $bg     $bg        $accent
-        active_workspace   $bg     $bg        $accentalt 
-        inactive_workspace $bg     $bg        $text
-        urgent_workspace   $accent $accent    $bg
-    }
+ swaybar_command true 
 }
 

@@ -1,5 +1,5 @@
-alias ls='exa --icons'
-alias cat='bat -p --theme=ansi'
+alias ls='lsd'
+alias cat='batcat -p --theme=ansi'
 alias dl-vid='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"'
 
 abbr -a gp      'git push'
