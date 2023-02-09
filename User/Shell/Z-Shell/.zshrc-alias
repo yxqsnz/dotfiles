@@ -1,6 +1,14 @@
+if test -f ~/.local/bin/lvim; then
+  alias vim="lvim"
+  alias nvim="lvim"
+  alias vi="lvim"
+else
+  alias vim="nvim"
+  alias vi="nvim"
+fi
+
+alias py="python3"
 alias pls="sudo "
-alias vim="nvim"
-alias vi="nvim"
 alias cl="clear"
 alias ls="ls --color=always"
 alias l="ls -lAh"
