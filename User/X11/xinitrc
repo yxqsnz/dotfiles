@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export XDG_RUNTIME_DIR=/tmp/runtime-$USER
+export XCURSOR_THEME=Breeze_Snow
+export XCURSOR_SIZE=16
+
+
+if ! test -d ${XDG_RUNTIME_DIR}
+then
+	mkdir -p ${XDG_RUNTIME_DIR}
+fi
+
+xrdb ~/.Xresources
+/usr/libexec/gsd-xsettings &
+
+exec dbus-run-session i3

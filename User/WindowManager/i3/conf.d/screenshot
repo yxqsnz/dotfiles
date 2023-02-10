@@ -1,0 +1,4 @@
+# vi: ft=i3config
+
+bindsym Print exec flameshot full -c
+bindsym Shift+Print exec flameshot gui

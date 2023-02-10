@@ -1,0 +1,8 @@
+#!/bin/sh
+
+export gnome_schema=org.gnome.desktop.interface
+
+gsettings set $gnome_schema gtk-theme 'Materia-dark-compact'
+gsettings set $gnome_schema icon-theme 'Papirus-Dark'
+gsettings set $gnome_schema cursor-theme 'Breeze_Snow'
+gsettings set $gnome_schema font-name 'Roboto'

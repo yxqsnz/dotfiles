@@ -1,3 +1,8 @@
+if [ $(tty) = "/dev/tty1" ]
+then
+	exec startx
+fi
+
 export PATH="$PATH:${HOME}/.local/bin"
 
 # Wasmer

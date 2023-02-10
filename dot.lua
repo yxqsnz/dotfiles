@@ -65,6 +65,30 @@ local dots = {
     path = "Shell/Z-Shell/.zshrc-alias",
     target = "~/.zshrc-alias",
   },
+
+  {
+	  name = "Xorg (InitRC)",
+	  path = "X11/Xresources",
+	  target = "~/.Xresources"
+  },
+
+  {
+	  name = "Xorg (Resources file)",
+	  path = "X11/xinitrc",
+	  target = "~/.xinitrc"
+  },
+
+  {
+	  name = "Alacritty",
+	  path = "Terminal/Alacritty",
+	  target = "~/.config/alacritty"
+  },
+
+  {
+	  name = "i3-wm",
+	  path = "WindowManager/i3",
+	  target = "~/.config/i3"
+  }
 }
 
 print(":: Installing")

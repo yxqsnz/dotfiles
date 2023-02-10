@@ -1,0 +1,21 @@
+# vi: ft=i3config
+set $bg        #161616
+set $text      #f2f4f8
+set $accent    #ebbcba
+set $accentalt #2a2a2a
+
+bar {
+    #font pango:Roboto
+    position top
+    status_command i3status
+    colors {
+        separator  $accentalt
+        background $bg
+        statusline $accent
+        #                 border  foreground text
+        focused_workspace  $bg     $bg        $accent
+        active_workspace   $bg     $bg        $accentalt 
+        inactive_workspace $bg     $bg        $text
+        urgent_workspace   $accent $accent    $bg
+    }
+}
