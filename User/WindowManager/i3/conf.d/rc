@@ -3,3 +3,4 @@ exec --no-startup-id dunst
 exec --no-startup-id flameshot
 exec --no-startup-id setxkbmap -variant intl
 exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
+exec --no-startup-id ~/.config/i3/bin.d/start-pipewire

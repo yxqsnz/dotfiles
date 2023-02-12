@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "[*] starting pipewire"
+pgrep -x pipewire       && pkill -TERM -x pipewire
+pgrep -x pipewire-pulse && pkill -TERM -x pipewire-pulse
+pgrep -x wireplumber    && pkill -TERM -x wireplumber
+
+pipewire &
+pipewire-pulse &
+
+wait

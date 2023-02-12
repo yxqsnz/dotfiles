@@ -1,8 +1,3 @@
-if [ $(tty) = "/dev/tty1" ]
-then
-	exec startx
-fi
-
 export PATH="$PATH:${HOME}/.local/bin"
 
 # Wasmer
@@ -20,6 +15,11 @@ fi
 export PNPM_HOME="${HOME}/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+if [ $(tty) = "/dev/tty1" ]
+then
+	exec startx
+fi
 
 source ~/.zshrc-opts
 source ~/.zshrc-theme
