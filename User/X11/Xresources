@@ -1,4 +1,32 @@
-Xcursor.theme: Breeze_Snow
+Xcursor.theme: macOS-Monterey-White
+st.alpha: 1.0
+Xft.antialias:	1
+Xft.hinting:	1
+Xft.autohint:	0
+Xft.hintstyle:	hintslight
+Xft.rgba:	rgb
+Xft.lcdfilter:	lcddefault
+
+! st
+st.borderpx: 20
+st.font:         JetBrainsMono Nerd Font:style:medium:pixelsize=15
+
+
+! Xterm
+xterm*faceName:JetBrainsMono Nerd Font Mono:style=Medium
+xterm*faceSize:12
+xterm*selectToClipboard:true
+xterm*eightBitInput:false
+xterm*eightBitOutput:true
+
+
+xterm*VT100.Translations: #override \
+	Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>Up:   scroll-back(1, halfpage) \n\
+	Ctrl Shift <Key>Down: scroll-forw(1, halfpage) \n\
+	Ctrl Shift <Key>+:    larger-vt-font() \n\
+	Ctrl Shift <Key>-:    smaller-vt-font()
 ! Nightfox colors for Xresources
 ! Style: carbonfox
 ! Upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/carbonfox/nightfox_xresources.Xresources

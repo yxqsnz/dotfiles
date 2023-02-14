@@ -24,71 +24,83 @@ local function realpath(path)
 end
 
 local dots = {
-  {
-    name = "Git",
-    path = "Dev/Git",
-    target = "~/.config/git",
-  },
+    {
+        name = "Git",
+        path = "Dev/Git",
+        target = "~/.config/git",
+    },
 
-  {
-    name = "Cargo",
-    path = "BuildTools/Cargo.toml",
-    target = "~/.cargo/config.toml",
-  },
+    {
+        name = "Cargo",
+        path = "BuildTools/Cargo.toml",
+        target = "~/.cargo/config.toml",
+    },
 
-  {
-    name = "DOOM Emacs",
-    path = "Editor/Doom-Emacs",
-    target = "~/.doom.d",
-  },
+    {
+        name = "DOOM Emacs",
+        path = "Editor/Doom-Emacs",
+        target = "~/.doom.d",
+    },
 
-  {
-    name = "Z-Shell RC",
-    path = "Shell/Z-Shell/.zshrc",
-    target = "~/.zshrc",
-  },
+    {
+        name = "Z-Shell RC",
+        path = "Shell/Z-Shell/.zshrc",
+        target = "~/.zshrc",
+    },
 
-  {
-    name = "Z-Shell Theme",
-    path = "Shell/Z-Shell/.zshrc-theme",
-    target = "~/.zshrc-theme",
-  },
+    {
+        name = "Z-Shell Theme",
+        path = "Shell/Z-Shell/.zshrc-theme",
+        target = "~/.zshrc-theme",
+    },
 
-  {
-    name = "Z-Shell Options",
-    path = "Shell/Z-Shell/.zshrc-opts",
-    target = "~/.zshrc-opts",
-  },
+    {
+        name = "Z-Shell Options",
+        path = "Shell/Z-Shell/.zshrc-opts",
+        target = "~/.zshrc-opts",
+    },
 
-  {
-    name = "Z-Shell Alises",
-    path = "Shell/Z-Shell/.zshrc-alias",
-    target = "~/.zshrc-alias",
-  },
+    {
+        name = "Z-Shell Alises",
+        path = "Shell/Z-Shell/.zshrc-alias",
+        target = "~/.zshrc-alias",
+    },
 
-  {
-	  name = "Xorg (InitRC)",
-	  path = "X11/Xresources",
-	  target = "~/.Xresources"
-  },
+    {
+        name = "Xorg (InitRC)",
+        path = "X11/Xresources",
+        target = "~/.Xresources"
+    },
 
-  {
-	  name = "Xorg (Resources file)",
-	  path = "X11/xinitrc",
-	  target = "~/.xinitrc"
-  },
+    {
+        name = "Xorg (Resources file)",
+        path = "X11/xinitrc",
+        target = "~/.xinitrc"
+    },
 
-  {
-	  name = "Alacritty",
-	  path = "Terminal/Alacritty",
-	  target = "~/.config/alacritty"
-  },
+    {
+        name = "Alacritty",
+        path = "Terminal/Alacritty",
+        target = "~/.config/alacritty"
+    },
 
-  {
-	  name = "i3-wm",
-	  path = "WindowManager/i3",
-	  target = "~/.config/i3"
-  }
+    {
+        name = "i3-wm",
+        path = "WindowManager/i3",
+        target = "~/.config/i3"
+    },
+
+    {
+        name = "Picom",
+        path = "WindowManager/picom",
+        target = "~/.config/picom"
+    },
+
+    {
+        name = "i3-status",
+        path = "WindowManager/i3status",
+        target = "~/.config/i3status"
+    },
 }
 
 print(":: Installing")
