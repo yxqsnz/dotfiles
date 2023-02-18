@@ -7,7 +7,8 @@ declare -A dots=(
     ["./conf/zsh/zshrc-opts"]="${HOME}/.zshrc-opts"
     ["./conf/zsh/zshrc-theme"]="${HOME}/.zshrc-theme"
     ["./conf/zsh/zshrc-alias"]="${HOME}/.zshrc-alias"
-    ["./conf/git"]="${HOME}/.config/git"
+    ["./conf/dev/git"]="${HOME}/.config/git"
+    ["./conf/dev/cargo/config.toml"]="${HOME}/.cargo/config.toml"
 )
 
 fs.exists() {

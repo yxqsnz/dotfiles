@@ -19,4 +19,4 @@ alias mv="mv -i"
 alias cp="cp -i"
 alias :q="exit"
 alias gp="git push"
-
+alias go-git-mod-init='go mod init $(git remote get-url origin | sed -E "s@\.git|https://@@g")'
