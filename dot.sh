@@ -8,6 +8,9 @@ declare -A dots=(
     ["./conf/zsh/zshrc-theme"]="${HOME}/.zshrc-theme"
     ["./conf/zsh/zshrc-alias"]="${HOME}/.zshrc-alias"
     ["./conf/dev/git"]="${HOME}/.config/git"
+    ["./conf/wm/sway"]="${HOME}/.config/sway"
+    ["./conf/term/alacritty"]="${HOME}/.config/alacritty"
+    ["./conf/bar/i3status"]="${HOME}/.config/i3status"
     ["./conf/dev/cargo/config.toml"]="${HOME}/.cargo/config.toml"
 )
 

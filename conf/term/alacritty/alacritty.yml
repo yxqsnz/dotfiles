@@ -1,0 +1,62 @@
+import:
+  - ~/.config/alacritty/theme.yml 
+env:
+  CURRENT_TERM: alacritty
+
+window:
+  padding:
+    x: 10
+    y: 10
+
+  dynamic_padding: false
+  opacity: 0.8
+
+  # Window title
+  title: Console 
+
+  dynamic_title: true
+
+# Font configuration
+font:
+  normal:
+    family: Roboto Mono 
+    style: Regular
+
+  bold:
+    style: Bold
+
+  italic:
+    style: Italic
+
+  bold_italic:
+    style: Bold Italic
+
+  size: 11.0
+
+
+  offset:
+    x: 0
+    y: 2
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+ #builtin_box_drawing: true
+
+draw_bold_text_with_bright_colors: false
+
+cursor:
+  style:
+    shape: Block
+    blinking: Always
+  blink_timeout: 2
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
+  thickness: 0.15
+
+live_config_reload: true
+
+

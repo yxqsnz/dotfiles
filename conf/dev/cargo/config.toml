@@ -17,5 +17,5 @@ codegen-units = 1
 in = "binstall"
 
 [build]
-rustc-wrapper = "cachepot"
+rustc-wrapper = "sccache"
 
