@@ -1,4 +1,4 @@
-# vi: ft=swayconfig
+# vi: ft=i3config
 
 set $urgent #e06c75
 set $focsed #2d2d2d

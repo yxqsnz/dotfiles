@@ -1,5 +1,3 @@
-# vi: ft=swayconfig
-
 # vi: ft=i3config
 set $bg        #161616
 set $text      #f2f4f8

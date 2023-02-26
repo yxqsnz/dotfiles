@@ -8,7 +8,7 @@ else
 fi
 
 alias py="python3"
-alias pls="sudo "
+alias pls="doas"
 alias cl="clear"
 alias ls="ls --color=always"
 alias l="ls -lAh"

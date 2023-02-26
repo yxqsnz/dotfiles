@@ -1,0 +1,7 @@
+# vi: ft=i3config
+
+exec_always --no-startup-id~/.config/i3/bin.d/gtk
+exec_always --no-startup-id ~/.fehbg
+exec_always --no-startup-id xsetroot -cursor_name left_ptr
+exec_always --no-startup-id xset led 3
+

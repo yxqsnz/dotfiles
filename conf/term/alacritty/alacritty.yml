@@ -9,7 +9,7 @@ window:
     y: 10
 
   dynamic_padding: false
-  opacity: 0.8
+  opacity: 1
 
   # Window title
   title: Console 

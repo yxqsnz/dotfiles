@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+xrdb ~/.Xresources
+/usr/lib/gsd-xsettings &
+picom & 
+
+exec dbus-run-session i3

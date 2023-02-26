@@ -58,7 +58,7 @@ ethernet eno16777736 {
         format_down = "  "
 }
 
-battery 1 {
+battery 0 {
         format = "  %status %percentage "
         last_full_capacity = false
         integer_battery_capacity = true
@@ -69,7 +69,6 @@ battery 1 {
 cpu_temperature 0 {
         format = " %degrees°C"
         max_threshold = 60
-        #path = "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input"
 }
 
 cpu_usage {
@@ -96,5 +95,4 @@ volume master {
         mixer = "Master"
         mixer_idx = 0
 }
-
 

@@ -1,0 +1,4 @@
+# vi: ft=i3config
+
+bindsym Print exec --no-startup-id flameshot full -c
+bindsym Shift+Print exec --no-startup-id flameshot gui
