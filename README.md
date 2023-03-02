@@ -1,3 +1,3 @@
 # My dotfiles.
 Checkout the project's branch.
-Current using `arch-v1`
+Current using `arch-v3`
