@@ -1,0 +1,22 @@
+if test -f ~/.local/bin/lvim; then
+  alias vim="lvim"
+  alias nvim="lvim"
+  alias vi="lvim"
+else
+  alias vim="nvim"
+  alias vi="nvim"
+fi
+
+alias py="python3"
+alias pls="sudo "
+alias cl="clear"
+alias ls="ls --color=always"
+alias l="ls -lAh"
+alias la="ls -lah"
+alias ll="ls -lh"
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -i"
+alias :q="exit"
+alias gp="git push"
+alias go-git-mod-init='go mod init $(git remote get-url origin | sed -E "s@\.git|https://@@g")'
