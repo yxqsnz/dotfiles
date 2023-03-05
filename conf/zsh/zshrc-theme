@@ -62,17 +62,13 @@ precmd(){
 	else
 		STATUS="%F{red}"
 	fi
-
-
-	#printf "\033[6 q"
 }
 
 chpwd(){
 	__initialize_git_prompt
 }
 ### }}}
-
-PROMPT='$STATUS%c%f${__GIT_PROMPT} $ ' 
+PROMPT='$STATUS%c%f${__GIT_PROMPT} %% ' 
 
 precmd
 

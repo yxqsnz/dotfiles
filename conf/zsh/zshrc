@@ -1,31 +1,25 @@
 export PATH="$PATH:${HOME}/.local/bin"
 export PATH="$PATH:${HOME}/.deno/bin"
 
-if [ "${TTY}" = "/dev/tty1" ]
+# opam
+
+if command -v opam >/dev/null
 then
-	echo "--> Starting Sway window manager" 
-	export SDL_VIDEODRIVER=wayland
-	export QT_QPA_PLATFORM=wayland
-	export XDG_CURRENT_DESKTOP=sway
-	export XDG_SESSION_DESKTOP=sway
-	export DESKTOP_SESSION sway
-	export MOZ_ENABLE_WAYLAND=1
-	export MOZ_DBUS_REMOTE=1
-	export _JAVA_AWT_WM_NONREPARENTING=1
-	exec sway
+  eval $(opam env --switch=default)
 fi
 
-# eval $(opam env)
+[[ ! -r ${HOME}/.opam/opam-init/init.zsh ]] || source ${HOME}/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+# opam end
+
 
 # Wasmer
 export WASMER_DIR="${HOME}/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 
 # asdf
-if [ -d "${HOME}/.asdf" ]; then
-	source "$HOME/.asdf/asdf.sh"
-	fpath+=${ASDF_DIR}/completions
-fi
+if [ -f "/opt/asdf-vm/asdf.sh" ]; then
+	source "/opt/asdf-vm/asdf.sh"
+	fi
 # asdf end
 
 # pnpm
