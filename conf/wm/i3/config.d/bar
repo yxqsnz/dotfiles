@@ -1,0 +1,7 @@
+# vi: ft=i3config
+set $bg        #161616
+set $text      #f2f4f8
+set $accent    #ebbcba
+set $accentalt #2a2a2a
+
+exec_always --no-startup-id ~/.config/polybar/launch.sh

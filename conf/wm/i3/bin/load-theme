@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+SUCCESS="\\033[1;32m" # Green
+WARNING="\\033[1;33m" # Yellow
+FAILURE="\\033[1;31m" # Red
+INFO="\\033[1;36m"    # Cyan
+BMPREFIX="      "
+SUCCESS_PREFIX="${SUCCESS}  *  ${NORMAL} "
+WARNING_PREFIX="${WARNING} *** ${NORMAL} "
+
+
+ok() {
+  echo -e "${SUCCESS_PREFIX} ${BM_PREFIX} ${@}"
+}
+
+warn() {
+  echo -e "${WARNING_PREFIX} ${BM_PREFIX} ${@}"
+}
+
+gset() {
+  gsettings set org.gnome.desktop.interface "$1" "$2"
+}
+
+while true
+do
+  if pgrep -x gsd-xsettings >/dev/null
+  then
+    break
+  fi
+
+  warn "Waiting for GNOME Settings Daemon for X to start..." 
+ sleep 5
+done
+
+source ~/.config/i3/theme
+ok "Loading GTK Settings"
+ok " Cursor: ${Icon}"
+ok "  Theme: ${Theme}"
+ok "   Font: ${Font}"
+ok "   Icon: ${Icon}"
+
+gset gtk-theme    ${Theme}
+gset icon-theme   ${Icon}
+gset cursor-theme ${Cursor}
+gset font-name    ${Font}
+
+cat > /tmp/x-resources <<-EOF
+Xcursor.theme: ${Cursor}
+Xft.antialias:	1
+Xft.hinting:	1
+Xft.autohint:	0
+Xft.hintstyle:	hintslight
+Xft.rgba:	rgb
+Xft.lcdfilter:	lcddefault
+EOF
+
+xrdb -merge /tmp/x-resources

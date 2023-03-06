@@ -3,11 +3,13 @@
 echo "--> yxqsnz's dotfiles tool."
 
 declare -A dots=(
-    ["./conf/zsh/zshrc"]="${HOME}/.zshrc"
-    ["./conf/zsh/zshrc-opts"]="${HOME}/.zshrc-opts"
-    ["./conf/zsh/zshrc-theme"]="${HOME}/.zshrc-theme"
-    ["./conf/zsh/zshrc-alias"]="${HOME}/.zshrc-alias"
+    ["./conf/shell/fish"]="${HOME}/.config/fish"
     ["./conf/dev/git"]="${HOME}/.config/git"
+    ["./conf/wm/i3"]="${HOME}/.config/i3"
+    ["./conf/bar/polybar"]="${HOME}/.config/polybar"
+    ["./conf/term/kitty"]="${HOME}/.config/kitty"
+    ["./conf/x11/xinitrc"]="${HOME}/.xinitrc"
+    ["./conf/x11/picom.conf"]="${HOME}/.config/picom/picom.conf"
     ["./conf/dev/cargo/config.toml"]="${HOME}/.cargo/config.toml"
 )
 

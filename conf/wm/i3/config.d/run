@@ -1,0 +1,13 @@
+# vi: ft=i3config
+
+exec --no-startup-id ~/.config/i3/bin/load-theme
+
+exec --no-startup-id kitty 
+exec --no-startup-id firefox
+exec --no-startup-id discord
+exec --no-startup-id flameshot
+exec --no-startup-id xset r rate 300 30
+exec --no-startup-id xset led 3
+exec --no-startup-id setxkbmap -variant intl us 
+exec --no-startup-id dex --autostart --environment i3
+
