@@ -10,4 +10,4 @@ if test -d ~/.config/lvim
 end
 
 alias pls=sudo
-alias ls=lsd
+alias ls=exa

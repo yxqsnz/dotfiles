@@ -1,21 +1,12 @@
+# a called to `_pure_prompt_new_line` is triggered by an event
 function fish_prompt
-  set -lx __vertical_exit_code $status
+    set --local exit_code $status  # save previous exit code
 
-  __vertical_util_set vertical_newline true
-  __vertical_util_set vertical_order   jobs user host dir git_branch \
-                                       git_status duration vi_mode
+    echo -e -n (_pure_prompt_beginning)  # init prompt context (clear current line, etc.)
+    _pure_print_prompt_rows # manage default vs. compact prompt
+    _pure_place_iterm2_prompt_mark # place iTerm shell integration mark
+    echo -e -n (_pure_prompt $exit_code)  # print prompt
+    echo -e (_pure_prompt_ending)  # reset colors and end prompt
 
-  if [ $vertical_newline = true ]
-    echo
-  end
-
-  __vertical_component_vert top
-  for component in $vertical_order
-    eval __vertical_component_$component
-  end
-  echo
-  __vertical_component_vert bottom
-  __vertical_component_cue
-
-  set_color normal
+    set _pure_fresh_session false
 end
