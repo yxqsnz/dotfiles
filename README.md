@@ -1,5 +1,8 @@
 # Arch Configuration
 
 ## System info
+
 - Distro: Arch Linux
-- Destop Enviroment: KDE 
+- Window Manager: I3
+- Terminal: Kitty
+- Bar: Polybar

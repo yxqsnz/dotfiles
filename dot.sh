@@ -1,15 +1,20 @@
 #!/bin/bash
 
-echo "--> yxqsnz's dotfiles tool."
+echo ">>= yxqsnz's dotfiles tool."
 
 declare -A dots=(
     ["./conf/shell/fish"]="${HOME}/.config/fish"
     ["./conf/dev/git"]="${HOME}/.config/git"
+    ["./conf/editor/astronvim"]="${HOME}/.config/nvim/lua/user"
+    
     ["./conf/wm/i3"]="${HOME}/.config/i3"
     ["./conf/bar/polybar"]="${HOME}/.config/polybar"
+    
     ["./conf/term/kitty"]="${HOME}/.config/kitty"
+
     ["./conf/x11/xinitrc"]="${HOME}/.xinitrc"
     ["./conf/x11/picom.conf"]="${HOME}/.config/picom/picom.conf"
+
     ["./conf/dev/cargo/config.toml"]="${HOME}/.cargo/config.toml"
 )
 
