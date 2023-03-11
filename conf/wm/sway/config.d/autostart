@@ -1,0 +1,7 @@
+# vi: ft=swayconfig
+
+# Essential
+exec --no-startup-id /usr/libexec/gsd-xsettings
+exec --no-startup-id ~/.config/sway/multimedia/launch
+exec_always --no-startup-id ~/.config/sway/gtk/apply
+exec --no-startup-id mako

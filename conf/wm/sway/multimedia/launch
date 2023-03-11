@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -x
+
+echo [*] Killing old processes
+pkill -TERM pipewire
+pkill -TERM wireplumber
+pkill -TERM pipewire-pulse
+pkill -TERM xdg-desktop-portal
+
+waitFor() {
+  while true
+  do
+    if pgrep -x "$1" >/dev/null
+    then
+      break
+    fi
+
+    echo " ** Waiting for $1"
+    sleep 1
+  done
+}
+
+echo [*] Starting Pipewire
+
+pipewire &
+waitFor pipewire
+
+/usr/libexec/xdg-desktop-portal-wlr &
+/usr/libexec/xdg-desktop-portal & 
+

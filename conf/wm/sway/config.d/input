@@ -1,0 +1,13 @@
+# vi: ft=swayconfig
+
+input type:pointer {
+  accel_profile flat
+  pointer_accel 0
+}
+
+input type:keyboard {
+ repeat_rate 30
+ repeat_delay 300
+ xkb_layout us
+ xkb_variant intl
+}

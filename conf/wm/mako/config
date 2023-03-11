@@ -1,0 +1,14 @@
+sort=-time
+layer=overlay
+background-color=#202020
+width=300
+height=110
+border-size=2
+border-color=#908caa
+border-radius=0
+icons=0
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=1
+font=Roboto 11
+anchor=bottom-right
