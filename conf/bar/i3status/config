@@ -17,12 +17,12 @@ general {
 
 #order += "ipv6"
 order += "disk /"
-order += "disk /home"
+#order += "disk /home"
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
 order += "wireless wlp8s0"
 order += "battery 0"
-order += "cpu_temperature 0"
+# order += "cpu_temperature 0"
 order += "cpu_usage"
 order += "load"
 order += "tztime localdate"
@@ -48,7 +48,7 @@ run_watch VPN {
 }
 
 wireless wlp8s0 {
-        format_up = "   Connected %quality "
+        format_up = "  %quality "
         format_down = "  "
 }
 

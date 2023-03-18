@@ -5,8 +5,8 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term foot
-set $menu wofi --show drun
+set $term kitty -1 
+set $menu wofi --show drun -p "" -I -i 
 
 # Media Keybinds
 bindsym $mod+F12 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status

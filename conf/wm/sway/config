@@ -20,6 +20,7 @@ bar {
     }
 }
 
+exec export DRI_PRIME=0
 
 include config.d/*
 include /etc/sway/config.d/*

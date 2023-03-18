@@ -2,6 +2,13 @@
 
 # Essential
 exec --no-startup-id /usr/libexec/gsd-xsettings
+exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
+exec --no-startup-id dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id ~/.config/sway/multimedia/launch
 exec_always --no-startup-id ~/.config/sway/gtk/apply
+exec --no-startup-id wl-paste | wl-copy
+
+# Apps
+
 exec --no-startup-id mako
+exec --no-startup-id flameshot

@@ -1,14 +1,25 @@
 #!/bin/bash
 
-set -x
+trap closeAll SIGINT SIGTERM
 
 echo [*] Killing old processes
+set -x
 pkill -TERM pipewire
 pkill -TERM wireplumber
 pkill -TERM pipewire-pulse
 pkill -TERM xdg-desktop-portal
 
+set +x
+
+closeAll() {
+  echo [*] Closing all multimedia services
+  set -x
+  runningJobs=$(jobs -p)
+  kill -TERM $runningJobs
+}
+
 waitFor() {
+  set +x
   while true
   do
     if pgrep -x "$1" >/dev/null
@@ -19,13 +30,23 @@ waitFor() {
     echo " ** Waiting for $1"
     sleep 1
   done
+
+  set -x
 }
 
 echo [*] Starting Pipewire
+set -x
 
 pipewire &
 waitFor pipewire
 
-/usr/libexec/xdg-desktop-portal-wlr &
-/usr/libexec/xdg-desktop-portal & 
+set +x
+echo [*] Starting Portal
+set -x
 
+/usr/libexec/xdg-desktop-portal &
+waitFor xdg-desktop-por
+/usr/libexec/xdg-desktop-portal-gtk &
+/usr/libexec/xdg-desktop-portal-wlr &
+
+wait

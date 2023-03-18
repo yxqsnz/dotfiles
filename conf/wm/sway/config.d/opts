@@ -2,17 +2,18 @@
 
 set $urgent #e06c75
 set $focsed #908caa
+set $focdbg #2d2d2d
 set $unfocd #202020
 set $text   #e0def4
 
-gaps inner 1
-gaps outer 1
+gaps inner 2
+gaps outer 2
 
 default_border pixel 1
 default_floating_border pixel 1
 
 # class                 border  backgr. text    indicator child_border
-client.focused          $focsed $focsed $text   $focsed   $focsed
+client.focused          $focsed $focdbg $text   $focsed   $focsed
 client.focused_inactive $unfocd $unfocd $text   $unfocd   $unfocd   
 client.unfocused        $unfocd $unfocd $text   $unfocd   $unfocd
 client.urgent           $urgent $urgent $text   $urgent   $urgent

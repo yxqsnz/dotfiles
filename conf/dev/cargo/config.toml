@@ -16,6 +16,9 @@ codegen-units = 1
 [alias]
 in = "binstall"
 
+[registries.crates-io]
+protocol = "sparse"
+
 [build]
 rustc-wrapper = "sccache"
 

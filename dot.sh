@@ -5,8 +5,9 @@ echo ">>= yxqsnz's dotfiles tool."
 declare -A dots=(
     ["./conf/shell/fish"]="${HOME}/.config/fish"
     ["./conf/dev/git"]="${HOME}/.config/git"
-    ["./conf/editor/astronvim"]="${HOME}/.config/nvim/lua/user"
-    
+    ["./conf/editor/astronvim"]="${HOME}/.config/astronvim"
+
+   ["${HOME}/.config/astronvim"]="${HOME}/.config/nvim/lua/user"
     ["./conf/wm/sway"]="${HOME}/.config/sway"
     ["./conf/wm/mako"]="${HOME}/.config/mako"
 
@@ -14,6 +15,7 @@ declare -A dots=(
     ["./conf/bar/i3status"]="${HOME}/.config/i3status"
 
     ["./conf/terminal/foot"]="${HOME}/.config/foot"
+    ["./conf/terminal/kitty"]="${HOME}/.config/kitty"
     ["./conf/dev/cargo/config.toml"]="${HOME}/.cargo/config.toml"
 )
 

@@ -4,3 +4,4 @@
 bindsym Print exec --no-startup-id grimshot --notify copy screen
 bindsym Shift+Print exec --no-startup-id grimshot --notify copy area
 bindsym Ctrl+Print exec --no-startup-id grimshot --notify copy window 
+bindsym Mod4+Shift+s exec --no-startup-id wl-paste | wl-copy && flameshot gui
