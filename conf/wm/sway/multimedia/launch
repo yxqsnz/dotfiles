@@ -49,4 +49,7 @@ waitFor xdg-desktop-por
 /usr/libexec/xdg-desktop-portal-gtk &
 /usr/libexec/xdg-desktop-portal-wlr &
 
+echo [*] Starting MPD
+mpd --no-daemon &
+
 wait

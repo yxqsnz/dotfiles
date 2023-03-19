@@ -7,8 +7,12 @@ for_window [class="File Operation Progress"] floating enable
 
 assign [app_id="kitty"] workspace number 1
 assign [app_id="chromium"] workspace number 2
+
 assign [class="Emacs"] workspace number 3 
 assign [class="Code"] workspace number 3 
+
+assign [app_id="lutris"] workspace number 4
+assign [class="ru-turikhay-tlauncher-bootstrap-Bootstrap"] workspace number 4
 assign [class="prismlauncher"] workspace number 4
 assign [class="Minecraft*"] workspace number 4
 assign [class="Steam"] workspace number 4
